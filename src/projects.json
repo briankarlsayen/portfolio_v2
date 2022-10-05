@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Note App",
+    "description": "A note taking app inspired by Notion. Has functionality of saving text and bookmarks, checking of finished task, and can freely drag notes to prefered position.",
+    "techStack": [
+      "PostgresSQL",
+      "ReactJs",
+      "ExpressJs"
+    ],
+    "github": "https://github.com/briankarlsayen/note-app-client",
+    "website": "https://note-app-client.web.app/app/login",
+    "image": "https://lh3.googleusercontent.com/7b5-vCOzOqhHzXoEj2F-K0acaNcmu3XmN-sA_8GFzdzORaCvpSH47dLQaxcdnCDGfYPjIOhzsCBy1fTlGVscX17mN3-GxZ_CupsoG87rt6wImmdnzvORPAXQShwKWQ_iVWN2C02r8dpW31E1IA3_3xQo1DCU2HyETQcoBtgSknMM4DLqiEcl87SrsdEAmlNpIzPzBWwKJGKlfGRVhJ4nnQJrwd5jljt16CEhiOdfRGoTgj-b12pIkqGpjojp_DsSID69nXrDLdNOG77l4EM15Twi_gRUTwyP9TpD3A1Q0mI62v7MPO4MfHHMCK7Tsr4idGnJ2VD-yfuxsCCKrPGBsTbXolnKRUGO3ws2bbTHbxjCwcCF2HfH6kupJ55_SGqmVsl1fWrWOlfXy1HBUNuHsoFHWi33b8BNtYhcfnO2RfSM7Btfo0d6YsDe5rVxEelle2uKSFoHufK_rnnkl_ZL2thHVVatdg1RurRZgc7UglDLH3h9eKgm22qFYawDG6THAbeXVNxe8w2bg4ZizjgeMfCzkHuUJTjvUpfm9BEC9cTDzZjtIxHmra1fnFHcdI5VlJD1fSWT8vJjDPsPScH9p328ut_qFj9Q28slspzoCzfGUa1_8Yw8C7gwMwMGf9ZEo9GHbeVfKXmCtakCb8pMHfySGLSSZ4J4Ci6XF91dqDp_kM5J5uX7lqLKv36rXfSWBW0Pg9dQoDmCZkwrPZszGEeiG8nLd0596vXY5GPcbTKVnB3Hqnk2g3nplILY4YMHZImn9JJAJz-aAW2Sy2-4OIy4KjecbPK_EQ-JgdGOgfQB9yT2va83ttjDmkU8ZSlNcY-pryFSZQAO9SuAMpgFGk8h5R9Ovjamyzy8uRuREYncsvSZuAZ7KJXJXGFrSHkE_X2HFAIXvn97TIGaboU3ox2olVC0jSAAbj4jjSZqjP3JSkF5IrlAIxm9KJrRs4jFH2E-gZR6u37GgR1vlDHlBoMnzM6rFt9xmWShx2nvqc48Sw=w1382-h641-no?authuser=0"
+  },
+  {
+    "name": "nooby",
+    "description": "An eccomerce app that uses server rendering to load high definition images.",
+    "techStack": [
+      "NextJs",
+      "Typescript"
+    ],
+    "github": "https://github.com/briankarlsayen/next-shop",
+    "website": "https://next-shop-livid.vercel.app/",
+    "image": "https://lh3.googleusercontent.com/aQt6TcWOi_D7Q9Wg4QVj1ub2_Vdd6g0vOrPdg5Lx6XBiGtKWlN5Vu-FFCylco1tyoUB_FBEOkC2hJX4PKPYUP6XC1vaEie3XIHjHTwze-kHkscvxwl4EIf8r4nmVdtNpqUnzserKUsIFtCPGQbWn_MFS2Ytd9mNLdIfqs_o7eG5R5ofReDHHAOFtUT25PKs6aL911hnAEyuwDavdq6k5yYZJ4NkjD9B8BgtEPDMx9WFbAh4C0AKuM2TFAoUCX3tGQEaMe8VGttINmf-csQTD3OQVN8puYpwwiz4ZGQly_KrOzX3ceE_G8FFh1y_reh-ezNbAharhuUrkt9VMhsOkkGSOC9OYWsNA3ysQeq5YQ8zfOygcW8F0dqlsr_ecnls3wKfCKQg1ewHec-FZkGP66csdLRi6A5uSSmFxZ75Kbb5sqHIUn8hzNn7_efDr_hdzmUW9Gi17cu3HY1ihz3uDJ8mI9UyGQrDzHD8Z7H4gdJgZyDvANxUOtEH3vtYCrG9ZU3RWh5Qdrko7aLn-bdGmCq3TpgpEBah6v4FeDc-v4rJBbB5rjbTN013lGXe-XUsW_dt6ItT4r9L9ixXKHNge6j_jxaKQGQx6Bvmphn-VNKwVd-SUuQ-CWK-VFdWDJUDz8foh0bjSHXHEoaw0bL7nLIQMHPh93uUq99XtHKed3stxCLqLXqwqvzXA_9YQvNaK03q4gzdleR_VW9vJFx1cjA5JdNJh4ReJD0od-lN6XRCvWqfnS6YqsIi7WjlPGy649yQd0zvAE67KTNxHxyv9kvNSLSWfd2oib1p-lxd1xTkvpZJe0Uo49ehC6h0EHZZKsFCKfvp0BA7Ru6EPvKL9CqcZ7zvp3EcC-APpGU7-U1mDrCSfZQTT1V_SbzGEHdtnwjnkeAUTw2nXir1ze2pxWde5PMXg-BgZy_sLrByyL3TyHjQ57S-xjHJlGjNWoJCXfofNffE1LhdILPvxpK9Vk6QaCklWB4dUwgLUj3WnLcox7w=w1449-h758-no?authuser=0"
+  },
+  {
+    "name": "Viction Beach Resort",
+    "description": "A note taking app inspired by Notion. Has functionality of saving text and bookmarks, checking of finished task, and can freely drag notes to prefered position.",
+    "techStack": [
+      "ReactJs"
+    ],
+    "github": "https://github.com/briankarlsayen/react-websites",
+    "website": "https://briankarlsayen.github.io/react-websites/",
+    "image": "https://lh3.googleusercontent.com/j4Iyn1BMjJ51lvR3jjdJZlwwqTTHA1vHXHZZd6UO7CN9TpG245MuPvkKXLsvGSqp9AWOZEazehmQviB_EgG-XPY-GvmKwYTiP5aYPo8buU1tat3n765PLCAS6N7BXn0WGQgp5wsjcC4vyRNfpIIb-Az4iVM5o2WdeFbGNKS6-K0YoodC67i6fsT63pxT7Rkn3Z5AVE2VQiPKeOCKSwtBriP8GgGMXGX4AqCvLCfNXYOm6fs2M40xHX2MMgkyUPJDxL6cu_WbWjoNPmR39Jm8sURS5U7S-sinx894U5rH7yHWhfW38aH1yQJhWuZeWlxf0tCBa8S_HOevSYp0rzh5f_XI_hPTAwdzVgRhZlTTayA8NTWzvQdcMPfRcczmWC7NWaFDN9TCZ8B7IogQHNTwl4vDFJN_7W8D9dgflimvxGMEcYXJv7xUxQS2HSXl7OVzTm_F6yBorGDptVU48_ifN29WE_qz_W9kLHglJb58jHGLwMr-D3O4uJg1IzHdAg_Rh5L0tPIBiGVRL6S6-1suqtfbnp8yNlm-O6sf7DTEA3SSKb0MarfbMirxrNORLKBwaWiO3IpVDckJPcAAPRd7p4KpuAeqMLf085nbqT7Qc6s2Q215hZ-XyM5-2F-o2_O9o9cP09J9RK0x8HKkMDVXOXROwGoRgIp8YXdFoUWvW7ZZIIk-wolsJ0d0-YJO9lLwLoaLmpWoQPnRnrncBfk5EkWgmavTN7-LdQ1aJP3IrMQxyDrYauujPcyLQrO7yS44-piuTyUAYnx42zQnW8iTIQU2tI1sPP-hPkb6RCEeEVHwHGD1-GIz-7g7c5CYzU7DZPA=w1368-h758-no?authuser=0"
+  }
+]

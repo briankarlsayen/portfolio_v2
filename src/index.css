@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -11,10 +13,22 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.tech-list {
+  flex: 0 35%;
+}
+
+.icon {
+  width: 1.25rem;
+}
+
+.icon:hover {
+  filter: invert(19%) sepia(64%) saturate(3769%) hue-rotate(237deg) brightness(89%) contrast(101%);
+}
 .body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
 }
 
 @tailwind base;
@@ -23,4 +37,16 @@
 
 .x-spacing {
   @apply px-20;
+}
+
+.gray-bg-custom {
+  @apply bg-[#F2F1EE];
+}
+
+.orange-text-custom {
+  @apply text-[#E94E35]
+}
+
+.hero-title {
+  font-family: 'Peralta', cursive;
 }
