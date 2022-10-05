@@ -1,8 +1,20 @@
-import React from 'react'
-// import NoteAppImg from '../assets/images/note-app-img.PNG'
 import projectsArr from '../projects.json'
 import GithubIcon from '../../public/github.svg';
 import LinkIcon from '../../public/link.svg';
+
+interface ProductCardProps {
+  id: number,
+  data: ProductProps
+}
+
+interface ProductProps {
+  name: string,
+  description: string,
+  techStack: Array<string>,
+  github: string,
+  website: string,
+  image: string,
+}
 
 const Projects = () => {
   return (
@@ -15,7 +27,7 @@ const Projects = () => {
         {
           projectsArr.map((project, id) => {
             return (
-              <ProjectCard key={id} id={id} mirror={false} data={project} />
+              <ProjectCard key={id} id={id} data={project} />
             )
           })
         }
@@ -24,11 +36,13 @@ const Projects = () => {
   )
 }
 
-const ProjectCard = ({id, data}: any) => {
+const ProjectCard = ({id, data}: ProductCardProps) => {
   return(
     <div className={`flex flex-row gap-10 ${id % 2 >=1 ? 'flex-row-reverse': ''}`}>
       <div className='drop-shadow-md basis-2/3'>
-        <img className='w-[80rem] h-[20rem] opacity-50 hover:opacity-100 cursor-pointer object-cover' src={data.image} />
+        <a href={data.website} target="_blank">
+          <img className='w-[80rem] h-[20rem] opacity-50 hover:opacity-100 cursor-pointer object-cover' src={data.image} />
+        </a>
       </div>
       <div id="project-text" className='flex flex-col flex-wrap py-10 basis-1/3'>
         <h4 className='uppercase text-sm'>Featured</h4>

@@ -44,9 +44,17 @@
 }
 
 .orange-text-custom {
-  @apply text-[#E94E35]
+  @apply text-[#7289da]
 }
 
 .hero-title {
   font-family: 'Peralta', cursive;
+}
+
+.bg-primary {
+  @apply bg-[#FBF5F3]
+}
+
+.bg-secondary {
+  @apply bg-[#E28413]
 }
