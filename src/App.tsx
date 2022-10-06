@@ -11,16 +11,31 @@ function App() {
 
   return (
     <div className="App">
+      <ScollTop />
       <Navbar />
       <Hero />
-      <div className='relative ml-[20rem]'>
-        <p className='text-xs uppercase absolute left-[4.6rem] -top-56'>scroll</p>
-        <img className='absolute w-7 left-20 -top-52 h-[20rem]' src={"./scroll.png"} />
-      </div>
+      <ScrollImg />
       <About />
       <Projects />
       <Contact />
       <Footer />
+    </div>
+  )
+}
+
+const ScrollImg = () => {
+  return(
+    <div className='relative xl:ml-[20rem] m-0 md:x-spacing'>
+      <p className='text-xs uppercase absolute left-[4.6rem] -top-56'>scroll</p>
+      <img className='absolute w-7 left-20 -top-52 h-[20rem]' src={"./scroll.png"} />
+    </div>
+  )
+}
+
+const ScollTop = () => {
+  return(
+    <div className='sticky top-0'>
+      <h2 className='uppercase'>Top</h2>
     </div>
   )
 }

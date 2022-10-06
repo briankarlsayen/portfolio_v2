@@ -11,10 +11,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 .tech-list {
   flex: 0 35%;
+}
+
+.icon-white {
+  filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(166deg) brightness(108%) contrast(101%);
+}
+
+.icon-white:hover {
+  filter: invert(72%) sepia(47%) saturate(5579%) hue-rotate(201deg) brightness(93%) contrast(83%);
+  /* background-color: white; */
 }
 
 .icon {
@@ -24,11 +34,17 @@
 .icon:hover {
   filter: invert(19%) sepia(64%) saturate(3769%) hue-rotate(237deg) brightness(89%) contrast(101%);
 }
+
 .body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
+  
+}
+
+.bg-quaternary:hover {
+  background-color: #6385FF;
 }
 
 @tailwind base;
@@ -36,7 +52,7 @@
 @tailwind utilities;
 
 .x-spacing {
-  @apply px-20;
+  @apply lg:px-20 xl:px-[20rem] px-2;
 }
 
 .gray-bg-custom {
@@ -52,9 +68,37 @@
 }
 
 .bg-primary {
-  @apply bg-[#FBF5F3]
+  @apply bg-[#FFFFFF]
+}
+
+.text-violet-primary {
+  @apply text-[#7289DA]
+}
+
+.text-violet-secondary {
+  @apply text-[#6385FF]
 }
 
 .bg-secondary {
-  @apply bg-[#E28413]
+  @apply bg-[#99AAB5]
+}
+
+.bg-tertiary {
+  @apply bg-[#2C2F33]
+}
+
+.bg-quaternary {
+  @apply bg-[#7289DA]
+}
+
+.bg-quinary {
+  @apply bg-[#6385FF]
+}
+
+.text-black-custom {
+  @apply text-[#2C2F33]
+}
+
+.title {
+  @apply md:text-3xl text-xl font-semibold;
 }
