@@ -11,11 +11,12 @@ function App() {
 
   return (
     <div className="App">
-      <ScollTop />
       <Navbar />
+      <ScollTop />
       <Hero />
       <ScrollImg />
       <About />
+
       <Projects />
       <Contact />
       <Footer />
@@ -34,8 +35,8 @@ const ScrollImg = () => {
 
 const ScollTop = () => {
   return(
-    <div className='sticky top-0'>
-      <h2 className='uppercase'>Top</h2>
+    <div className='fixed md:bottom-20 bottom-10 md:right-20 right-2 -rotate-90 w-fit rounded py-2 px-4 cursor-pointer bg-quaternary z-50' onClick={() => window.location.replace("/#navbar")}>
+      <h2 className='uppercase text-white'>Top</h2>
     </div>
   )
 }
