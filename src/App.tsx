@@ -10,13 +10,12 @@ import UpIcon from './assets/icons/up.svg'
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar />
       <ScollTop />
       <Hero />
       <ScrollImg />
       <About />
-
       <Projects />
       <Contact />
       <Footer />
@@ -26,22 +25,18 @@ function App() {
 
 const ScrollImg = () => {
   return(
-    <div className='relative xl:ml-[20rem] m-0 md:x-spacing'>
-      <p className='text-xs uppercase absolute left-[4.6rem] -top-56'>scroll</p>
-      <img className='absolute w-7 left-20 -top-52 h-[20rem]' src={"./scroll.png"} />
+    <div className='relative xl:ml-[20rem] m-0 md:x-spacing -top-40 md:-top-56'>
+      <p className='text-xs uppercase absolute left-[4.6rem] -top-4'>scroll</p>
+      <img className='absolute w-7 left-20 h-[20rem]' src={"./scroll.png"} />
     </div>
   )
 }
 
 const ScollTop = () => {
   return(
-    <div id="top-btn" className='fixed md:bottom-20 bottom-10 md:right-20 right-2 w-fit rounded p-1 cursor-pointer bg-white shadow-lg border z-50 invisible' onClick={() => window.location.replace("/#navbar")}>
-      {/* <h2 className='uppercase text-black'>Top</h2> */}
-      <img className='h-10 w-10 icon' src={UpIcon} alt="up-icon"/>
+    <div id="top-btn" className='fixed md:bottom-20 bottom-10 md:right-20 right-2 w-fit rounded cursor-pointer bg-white shadow-lg border z-50 invisible' onClick={() => window.location.replace("/#navbar")}>
+      <img className='md:h-10 md:w-10 h-8 w-8 icon' src={UpIcon} alt="up-icon"/>
     </div>
-    // <div className='fixed md:bottom-20 bottom-10 md:right-20 right-2 -rotate-90 w-fit rounded py-2 px-4 cursor-pointer bg-quaternary z-50' onClick={() => window.location.replace("/#navbar")}>
-    //   <h2 className='uppercase text-white'>Top</h2>
-    // </div>
   )
 }
 

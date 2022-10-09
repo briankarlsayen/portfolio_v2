@@ -17,5 +17,21 @@
           else { document.getElementById('top-btn').style.visibility="hidden" }
       };
     </script>
+    <script defer>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          console.log('enty', entry)
+          if(entry.isIntersecting) {
+            console.log('henlo')
+            entry.target.classList.add('appear');
+          } else {
+            entry.target.classList.remove('appear');
+          }
+        })
+      })
+      const hiddenElements = document.querySelectorAll('.disaappear');
+      console.log('hiddenElements', hiddenElements)
+      hiddenElements.forEach((el) =>observer.observe(el));
+    </script>
   </body>
 </html>
