@@ -12,7 +12,7 @@ const Contact = () => {
         <h2 className="title pb-6 hero-title">Get in touch</h2>
         <p>If you want to connect with me, leave your email here</p>
         <p>and I will contact you ASAP.</p>
-        <form className="flex gap-2 pt-6">
+        <form className="flex gap-2 pt-6" onSubmit={()=>console.log('henlo')}>
           <input className="shadow appearance-none border rounded w-full py-2 px-3 text-black-custom outline-none" type='email' placeholder='email'
             value={inputText}
             onChange={(e) => setInputText(e.target.value)} />
@@ -29,7 +29,7 @@ const Contact = () => {
               <img className='cursor-pointer icon-white' src={LinkedinIcon} alt="linkedin-icon" />
             </a>
           </span>
-          <span>
+          <span className='relative flex flex-col items-center group'>
             <a href='https://www.instagram.com/briansayen/' target="_blank">
               <img className='cursor-pointer icon-white' src={InstagramIcon} alt="instagram-icon" />
             </a>

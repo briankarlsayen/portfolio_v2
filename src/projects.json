@@ -17,7 +17,7 @@
   },
   {
     "name": "Viction Beach Resort",
-    "description": "A note taking app inspired by Notion. Has functionality of saving text and bookmarks, checking of finished task, and can freely drag notes to prefered position.",
+    "description": "A website showing information of the resort and included ammenties.",
     "techStack": ["ReactJs"],
     "github": "https://github.com/briankarlsayen/react-websites",
     "website": "https://briankarlsayen.github.io/react-websites/",

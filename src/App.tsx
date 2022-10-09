@@ -6,9 +6,9 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import UpIcon from './assets/icons/up.svg'
 
 function App() {
-
   return (
     <div className="App">
       <Navbar />
@@ -35,9 +35,13 @@ const ScrollImg = () => {
 
 const ScollTop = () => {
   return(
-    <div className='fixed md:bottom-20 bottom-10 md:right-20 right-2 -rotate-90 w-fit rounded py-2 px-4 cursor-pointer bg-quaternary z-50' onClick={() => window.location.replace("/#navbar")}>
-      <h2 className='uppercase text-white'>Top</h2>
+    <div id="top-btn" className='fixed md:bottom-20 bottom-10 md:right-20 right-2 w-fit rounded p-1 cursor-pointer bg-white shadow-lg border z-50 invisible' onClick={() => window.location.replace("/#navbar")}>
+      {/* <h2 className='uppercase text-black'>Top</h2> */}
+      <img className='h-10 w-10 icon' src={UpIcon} alt="up-icon"/>
     </div>
+    // <div className='fixed md:bottom-20 bottom-10 md:right-20 right-2 -rotate-90 w-fit rounded py-2 px-4 cursor-pointer bg-quaternary z-50' onClick={() => window.location.replace("/#navbar")}>
+    //   <h2 className='uppercase text-white'>Top</h2>
+    // </div>
   )
 }
 
