@@ -1,5 +1,3 @@
-import '../styling/ShowAnimation.css';
-import { useRef, useState, useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 const About = () => {
   const { ref: techRef, inView: techVisible } = useInView({triggerOnce: true});
