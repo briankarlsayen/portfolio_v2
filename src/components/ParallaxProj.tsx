@@ -1,12 +1,11 @@
 import projectsArr from "../projects.json";
 import GithubIcon from "../assets/icons/github.svg";
 import LinkIcon from "../assets/icons/link.svg";
-import ParallaxProj from "./ParallaxProj";
+
 interface ProductCardProps {
   id: number;
   data: ProductProps;
 }
-
 interface ProductProps {
   name: string;
   description: string;
@@ -16,25 +15,6 @@ interface ProductProps {
   image: string;
 }
 
-const Projects = () => {
-  return (
-    <div id="project" className="bg-primary">
-      <div className="min-h-screen mx-auto flex flex-col gap-10 py-20 lg:px-0">
-        {/* <div className="min-h-screen max-w-6xl mx-auto flex flex-col gap-10 py-20 x-spacing lg:px-0"> */}
-        <div className="-mb-16">
-          <h4 className="text-violet-primary tracking-widest heading">
-            Projects
-          </h4>
-          <h2 className="sub-heading font-bold hero-title">Sample Projects</h2>
-        </div>
-        {projectsArr.map((project, id) => {
-          return <ParallaxProj key={id} id={id} data={project} />;
-        })}
-      </div>
-    </div>
-  );
-};
-
 const ProjectCard = ({ id, data }: ProductCardProps) => {
   return (
     <div
@@ -43,13 +23,15 @@ const ProjectCard = ({ id, data }: ProductCardProps) => {
       }`}
     >
       {/* <div className={`flex md:flex-row flex-col gap-10 ${id % 2 >=1 ? 'flex-row-reverse': ''}`}> */}
-      <div className="drop-shadow-md basis-2/3">
-        <a href={data.website} target="_blank">
-          <img
-            className="w-[80rem] h-[20rem] object-left opacity-50 hover:opacity-100 cursor-pointer object-cover"
-            src={data.image}
-          />
-        </a>
+      <div className="drop-shadow-md basis-2/3 w-screen h-screen bg-gray-600 items-center flex">
+        <div
+          className="image-bg"
+          style={{ backgroundImage: `url(${data.image})` }}
+        >
+          {/* <a href={data.website} target="_blank">
+            <img className=" object-left object-cover" src={data.image} />
+          </a> */}
+        </div>
       </div>
       <div
         id="project-text"
@@ -88,4 +70,4 @@ const ProjectCard = ({ id, data }: ProductCardProps) => {
   );
 };
 
-export default Projects;
+export default ProjectCard;
