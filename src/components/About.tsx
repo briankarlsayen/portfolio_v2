@@ -22,7 +22,6 @@ const About = () => {
           This are some of the technologies that i’ve worked with:
         </p>
         <ul className="flex flex-row flex-wrap pt-6">
-          {/* <ul className={`flex flex-row flex-wrap pt-6 animate ${techVisible ? 'appear' : 'disappear'}`} ref={techRef}> */}
           <li className="tech-list list-disc ml-4">Javascript</li>
           <li className="tech-list list-disc ml-4">Typescript</li>
           <li className="tech-list list-disc ml-4">ReactJs</li>

@@ -1,4 +1,3 @@
-import projectsArr from "../projects.json";
 import GithubIcon from "../assets/icons/github.svg";
 import LinkIcon from "../assets/icons/link.svg";
 
@@ -17,36 +16,23 @@ interface ProductProps {
 }
 
 const ProjectCard = ({ id, data }: ProductCardProps) => {
-  console.log("import.meta.env.DEV", import.meta.env.DEV);
   return (
     <div
       className={`flex items-center flex-col md:gap-10 gap-4 ${
         id % 2 >= 1 ? "md:flex-row-reverse" : "md:flex-row"
       }`}
     >
-      {/* <div className={`flex md:flex-row flex-col gap-10 ${id % 2 >=1 ? 'flex-row-reverse': ''}`}> */}
       <div className="drop-shadow-md basis-2/3 w-full h-screen bg-gray-600 items-center flex">
         <div
           className={`image-bg bg-left md:h-screen h-[50vh] md:bg-auto bg-cover ${
             id % 2 >= 1 ? "md:bg-right" : "bg-left"
           }`}
-          // style={{
-          //   backgroundImage: `url(${imageObj.map((obj: any) => {
-          //     // obj.title === data.name;
-          //     // return obj.image;
-          //     if (obj.title === data.name) return obj.image;
-          //   })})`,
-          // }}
           style={{
             backgroundImage: `url(${
               import.meta.env.DEV ? data.devImage : data.image
             })`,
           }}
-        >
-          {/* <a href={data.website} target="_blank">
-            <img className=" object-left object-cover" src={data.image} />
-          </a> */}
-        </div>
+        ></div>
       </div>
       <div
         id="project-text"
