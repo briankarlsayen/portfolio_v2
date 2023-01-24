@@ -5,7 +5,7 @@
     "techStack": ["PostgresSQL", "ReactJs", "ExpressJs"],
     "github": "https://github.com/briankarlsayen/note-app-client",
     "website": "https://note-app-client.web.app/app/login",
-    "image": "../../public/images/note-app.jpg"
+    "image": "../images/note-app.jpg"
   },
 
   {
@@ -14,7 +14,7 @@
     "techStack": ["NextJs", "Typescript"],
     "github": "https://github.com/briankarlsayen/next-shop",
     "website": "https://next-shop-livid.vercel.app/",
-    "image": "../../public/images/nooby-app.jpg"
+    "image": "../images/nooby-app.jpg"
   },
   {
     "name": "Viction Beach Resort",
@@ -22,6 +22,6 @@
     "techStack": ["ReactJs"],
     "github": "https://github.com/briankarlsayen/react-websites",
     "website": "https://briankarlsayen.github.io/react-websites/",
-    "image": "../../public/images/viction-app.jpg"
+    "image": "../images/viction-app.jpg"
   }
 ]
