@@ -13,9 +13,11 @@ interface ProductProps {
   github: string;
   website: string;
   image: string;
+  devImage: string;
 }
 
 const ProjectCard = ({ id, data }: ProductCardProps) => {
+  console.log("import.meta.env.DEV", import.meta.env.DEV);
   return (
     <div
       className={`flex items-center flex-col md:gap-10 gap-4 ${
@@ -35,7 +37,11 @@ const ProjectCard = ({ id, data }: ProductCardProps) => {
           //     if (obj.title === data.name) return obj.image;
           //   })})`,
           // }}
-          style={{ backgroundImage: `url(${data.image})` }}
+          style={{
+            backgroundImage: `url(${
+              import.meta.env.DEV ? data.devImage : data.image
+            })`,
+          }}
         >
           {/* <a href={data.website} target="_blank">
             <img className=" object-left object-cover" src={data.image} />
