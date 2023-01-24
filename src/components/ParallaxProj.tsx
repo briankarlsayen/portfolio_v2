@@ -23,9 +23,18 @@ const ProjectCard = ({ id, data }: ProductCardProps) => {
       }`}
     >
       {/* <div className={`flex md:flex-row flex-col gap-10 ${id % 2 >=1 ? 'flex-row-reverse': ''}`}> */}
-      <div className="drop-shadow-md basis-2/3 w-screen h-screen bg-gray-600 items-center flex">
+      <div className="drop-shadow-md basis-2/3 w-full h-screen bg-gray-600 items-center flex">
         <div
-          className="image-bg"
+          className={`image-bg bg-left md:h-screen h-[50vh] md:bg-auto bg-cover ${
+            id % 2 >= 1 ? "md:bg-right" : "bg-left"
+          }`}
+          // style={{
+          //   backgroundImage: `url(${imageObj.map((obj: any) => {
+          //     // obj.title === data.name;
+          //     // return obj.image;
+          //     if (obj.title === data.name) return obj.image;
+          //   })})`,
+          // }}
           style={{ backgroundImage: `url(${data.image})` }}
         >
           {/* <a href={data.website} target="_blank">
