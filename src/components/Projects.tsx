@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div id="project" className="bg-primary">
       <div className="min-h-screen mx-auto flex flex-col gap-10 py-20 lg:px-0">
-        <div className="-mb-16">
+        <div className="-mb-16 x-spacing pb-4">
           <h4 className="text-violet-primary tracking-widest heading">
             Projects
           </h4>

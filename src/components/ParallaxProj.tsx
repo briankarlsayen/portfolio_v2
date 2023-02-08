@@ -18,7 +18,7 @@ interface ProductProps {
 const ProjectCard = ({ id, data }: ProductCardProps) => {
   return (
     <div
-      className={`flex items-center flex-col md:gap-10 gap-4 ${
+      className={`flex items-center flex-col md:gap-0 gap-4 ${
         id % 2 >= 1 ? "md:flex-row-reverse" : "md:flex-row"
       }`}
     >
@@ -36,7 +36,7 @@ const ProjectCard = ({ id, data }: ProductCardProps) => {
       </div>
       <div
         id="project-text"
-        className="flex flex-col flex-wrap md:py-10 pb-10 basis-1/3"
+        className="flex flex-col flex-wrap md:py-10 pb-10 basis-1/3 px-4"
       >
         <h4 className="uppercase text-sm text-violet-primary tracking-widest">
           Featured
