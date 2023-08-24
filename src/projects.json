@@ -2,29 +2,54 @@
   {
     "name": "Note App",
     "description": "A note taking app inspired by Notion. Has functionality of saving text and bookmarks, checking of finished task, and can freely drag notes to prefered position.",
-    "techStack": ["PostgresSQL", "ReactJs", "ExpressJs"],
+    "techStack": [
+      "PostgresSQL",
+      "ReactJs",
+      "ExpressJs"
+    ],
     "github": "https://github.com/briankarlsayen/note-app-client",
     "website": "https://note-app-client.web.app/app/login",
     "image": "../images/note-app.jpg",
     "devImage": "../../public/images/note-app.jpg"
   },
-
   {
     "name": "nooby",
     "description": "An eccomerce app that uses server rendering to load high definition images.",
-    "techStack": ["NextJs", "Typescript"],
+    "techStack": [
+      "NextJs",
+      "Typescript"
+    ],
     "github": "https://github.com/briankarlsayen/next-shop",
-    "website": "https://next-shop-livid.vercel.app/",
+    "website": "https://next-shop-livid.vercel.app",
     "image": "../images/nooby-app.jpg",
     "devImage": "../../public/images/nooby-app.jpg"
   },
   {
-    "name": "Viction Beach Resort",
-    "description": "A website showing information of the resort and included ammenties.",
-    "techStack": ["ReactJs"],
-    "github": "https://github.com/briankarlsayen/react-websites",
-    "website": "https://briankarlsayen.github.io/react-websites/",
-    "image": "../images/viction-app.jpg",
-    "devImage": "../../public/images/viction-app.jpg"
+    "name": "Chat App",
+    "description": "A messaging website that prioritizes anonimity above all.",
+    "techStack": [
+      "ReactJs",
+      "Typescript",
+      "Socketio",
+      "MongoDB"
+    ],
+    "github": "https://github.com/briankarlsayen/chat-app-client",
+    "website": "https://chat-app-client-topaz.vercel.app",
+    "image": "../images/chat-app.png",
+    "devImage": "../../public/images/chat-app.png"
+  },
+  {
+    "name": "Pokedex",
+    "description": "A pokemon information searching website.",
+    "techStack": [
+      "ReactJs",
+      "Typescript",
+      "GraphQL",
+      "Apollo-client"
+    ],
+    "github": "https://github.com/briankarlsayen/pokemon-gql",
+    "website": "https://pokemon-gql-five.vercel.app",
+    "image": "../images/pokedex-img.png",
+    "devImage": "../../public/images/pokedex-img.png"
   }
 ]
