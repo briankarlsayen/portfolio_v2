@@ -10,7 +10,8 @@
     "github": "https://github.com/briankarlsayen/note-app-client",
     "website": "https://note-app-client.web.app/app/login",
     "image": "../images/note-app.jpg",
-    "devImage": "../../public/images/note-app.jpg"
+    "devImage": "../../public/images/note-app.jpg",
+    "bg": "#947F5C"
   },
   {
     "name": "nooby",
@@ -22,7 +23,8 @@
     "github": "https://github.com/briankarlsayen/next-shop",
     "website": "https://next-shop-livid.vercel.app",
     "image": "../images/nooby-app.jpg",
-    "devImage": "../../public/images/nooby-app.jpg"
+    "devImage": "../../public/images/nooby-app.jpg",
+    "bg": "white"
   },
   {
     "name": "Chat App",
@@ -36,7 +38,8 @@
     "github": "https://github.com/briankarlsayen/chat-app-client",
     "website": "https://chat-app-client-topaz.vercel.app",
     "image": "../images/chat-app.png",
-    "devImage": "../../public/images/chat-app.png"
+    "devImage": "../../public/images/chat-app.png",
+    "bg": "#688FFF"
   },
   {
     "name": "Pokedex",
@@ -50,6 +53,7 @@
     "github": "https://github.com/briankarlsayen/pokemon-gql",
     "website": "https://pokemon-gql-five.vercel.app",
     "image": "../images/pokedex-img.png",
-    "devImage": "../../public/images/pokedex-img.png"
+    "devImage": "../../public/images/pokedex-img.png",
+    "bg": "white"
   }
 ]

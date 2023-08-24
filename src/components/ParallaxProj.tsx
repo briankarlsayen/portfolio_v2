@@ -13,6 +13,7 @@ interface ProductProps {
   website: string;
   image: string;
   devImage: string;
+  bg: string;
 }
 
 const ProjectCard = ({ id, data }: ProductCardProps) => {
@@ -28,6 +29,9 @@ const ProjectCard = ({ id, data }: ProductCardProps) => {
             id % 2 >= 1 ? 'md:bg-right' : 'bg-left'
           }`}
           style={{
+            backgroundColor: data.bg,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'contain',
             backgroundImage: `url(${
               import.meta.env.DEV ? data.devImage : data.image
             })`,
