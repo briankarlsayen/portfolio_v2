@@ -1,4 +1,17 @@
 import { useInView } from 'react-intersection-observer';
+import JsIcon from '../assets/icons/js-icon.png';
+import TsIcon from '../assets/icons/ts-icon.png';
+import ReactjsIcon from '../assets/icons/react-icon.png';
+import GithubIcon from '../assets/icons/github-icon.png';
+import ReduxIcon from '../assets/icons/redux-icon.png';
+import TailwindIcon from '../assets/icons/tailwind-icon.png';
+import NextJsIcon from '../assets/icons/next-icon.png';
+import MongoDBIcon from '../assets/icons/mongo-icon.png';
+import PHPIcon from '../assets/icons/php-icon.png';
+import PosgresIcon from '../assets/icons/postgres-icon.png';
+import ExpressJsIcon from '../assets/icons/expressjs-icon.png';
+import LaravelIcon from '../assets/icons/laravel-icon.png';
+
 const About = () => {
   const { ref: techRef, inView: techVisible } = useInView({
     triggerOnce: true,
@@ -21,18 +34,78 @@ const About = () => {
         <p className='pt-2'>
           This are some of the technologies that i’ve worked with:
         </p>
-        <ul className='flex flex-row flex-wrap pt-6'>
-          <li className='tech-list list-disc ml-4'>Javascript</li>
-          <li className='tech-list list-disc ml-4'>Typescript</li>
-          <li className='tech-list list-disc ml-4'>ReactJs</li>
-          <li className='tech-list list-disc ml-4'>NextJs</li>
-          <li className='tech-list list-disc ml-4'>PostgresSQL</li>
-          <li className='tech-list list-disc ml-4'>MongoDB</li>
-          <li className='tech-list list-disc ml-4'>ExpressJs</li>
-          <li className='tech-list list-disc ml-4'>PHP</li>
-          <li className='tech-list list-disc ml-4'>Laravel</li>
-        </ul>
+        <TechStacks />
       </div>
+    </div>
+  );
+};
+
+const TechStacks = () => {
+  const stackList = [
+    {
+      name: 'Javascript',
+      src: JsIcon,
+    },
+    {
+      name: 'Typescript',
+      src: TsIcon,
+    },
+    {
+      name: 'Reactjs',
+      src: ReactjsIcon,
+    },
+    {
+      name: 'Github',
+      src: GithubIcon,
+    },
+    {
+      name: 'Redux',
+      src: ReduxIcon,
+    },
+    {
+      name: 'Tailwindcss',
+      src: TailwindIcon,
+    },
+    {
+      name: 'NextJs',
+      src: NextJsIcon,
+    },
+    {
+      name: 'MongoDB',
+      src: MongoDBIcon,
+    },
+    {
+      name: 'PHP',
+      src: PHPIcon,
+    },
+    {
+      name: 'Laravel',
+      src: LaravelIcon,
+    },
+    {
+      name: 'PostgresSQL',
+      src: PosgresIcon,
+    },
+    {
+      name: 'ExpressJs',
+      src: ExpressJsIcon,
+    },
+  ];
+  return (
+    <div>
+      <ul className='flex flex-row flex-wrap pt-6'>
+        {stackList.map((item) => (
+          <li
+            key={item.name}
+            className='p-4 items-center flex flex-col justify-center'
+          >
+            <span className='w-full h-full flex justify-center'>
+              <img className='h-10' src={item.src} alt={item.name} />
+            </span>
+            {item.name}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
