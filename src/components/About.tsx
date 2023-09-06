@@ -17,7 +17,7 @@ const About = () => {
     triggerOnce: true,
   });
   return (
-    <div id='about' className='bg-quaternary'>
+    <div id='about' className='bg-black text-gray-400'>
       <div
         className={`min-h-screen max-w-2xl flex flex-col mx-auto justify-center x-spacing md:px-0 animate ${
           techVisible ? 'appear' : 'disappear'
@@ -93,15 +93,19 @@ const TechStacks = () => {
   ];
   return (
     <div>
-      <ul className='flex flex-row flex-wrap pt-6'>
+      <ul className='grid grid-cols-4 pt-6'>
         {stackList.map((item) => (
           <li
             key={item.name}
-            className='p-4 items-center flex flex-col justify-center'
+            className='p-4 items-center flex flex-col justify-center '
           >
-            <span className='w-full h-full flex justify-center'>
-              <img className='h-10' src={item.src} alt={item.name} />
-            </span>
+            <div className='w-full h-full flex justify-center '>
+              <img
+                className='h-10 hover:contrast-[.5] invert-[1]'
+                src={item.src}
+                alt={item.name}
+              />
+            </div>
             {item.name}
           </li>
         ))}

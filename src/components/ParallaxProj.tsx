@@ -17,6 +17,19 @@ interface ProductProps {
 }
 
 const ProjectCard = ({ id, data }: ProductCardProps) => {
+  const links = [
+    {
+      name: 'Source code',
+      url: data.github,
+      src: GithubIcon,
+    },
+    {
+      name: 'Website',
+      url: data.website,
+      src: LinkIcon,
+    },
+  ];
+
   return (
     <div
       className={`flex items-center flex-col md:gap-0 gap-4 ${
@@ -40,7 +53,7 @@ const ProjectCard = ({ id, data }: ProductCardProps) => {
       </div>
       <div
         id='project-text'
-        className='flex flex-col flex-wrap md:py-10 pb-10 basis-1/3 px-4'
+        className='flex flex-col flex-wrap md:py-10 pb-10 basis-1/3 px-4 w-full'
       >
         <h4 className='uppercase text-sm text-violet-primary tracking-widest'>
           Featured
@@ -57,8 +70,16 @@ const ProjectCard = ({ id, data }: ProductCardProps) => {
               );
             })}
           </ul>
-          <ul className='flex flex-row gap-2'>
-            <span className='p-1 cursor-pointer'>
+          <ul className='flex flex-row gap-2 pt-4'>
+            {links.map((link) => (
+              <LinkBtns
+                key={link.name}
+                name={link.name}
+                url={link.url}
+                src={link.src}
+              />
+            ))}
+            {/* <span className='p-1 cursor-pointer'>
               <a href={data.github} target='_blank'>
                 <img className='icon' src={GithubIcon} alt='github-icon' />
               </a>
@@ -67,11 +88,27 @@ const ProjectCard = ({ id, data }: ProductCardProps) => {
               <a href={data.website} target='_blank'>
                 <img className='icon' src={LinkIcon} alt='link-icon' />
               </a>
-            </span>
+            </span> */}
           </ul>
         </div>
       </div>
     </div>
+  );
+};
+
+const LinkBtns = ({ name, url, src }: any) => {
+  return (
+    <span className='px-4 py-2 cursor-pointer bg-blue-500 hover:bg-blue-600 rounded-md text-white shadow-md'>
+      <a className='lg:flex md:block flex gap-4 ' href={url} target='_blank'>
+        <img className='invert-[1]' src={src} alt={name} />
+        {name}
+      </a>
+    </span>
+    // <span className='p-1 cursor-pointer'>
+    //   <a href={url} target='_blank'>
+    //     <img className='icon' src={src} alt={name} />
+    //   </a>
+    // </span>
   );
 };
 
