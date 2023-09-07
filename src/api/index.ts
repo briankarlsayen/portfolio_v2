@@ -3,7 +3,7 @@ export const sendMail = async (email: string) => {
   const data = {
     to: 'blu3fire89@gmail.com',
     from: 'Portfolio_v2',
-    subject: 'Get in touched',
+    subject: 'Get in touch',
     body: `Email ${email} has contacted you through your portfolio https://briansayen.netlify.app.`,
     type: 'default',
   };
