@@ -36,7 +36,7 @@ const ProjectCard = ({ id, data }: ProductCardProps) => {
         id % 2 >= 1 ? 'md:flex-row-reverse' : 'md:flex-row'
       }`}
     >
-      <div className='drop-shadow-md basis-2/3 w-full h-screen bg-gray-600 items-center flex'>
+      <div className='drop-shadow-lg basis-2/3 w-full h-screen bg-gray-600 items-center flex'>
         <div
           className={`image-bg md:h-screen h-[50vh] md:bg-auto bg-cover bg-center ${
             id % 2 >= 1 ? 'md:bg-right' : 'bg-left'
@@ -64,7 +64,10 @@ const ProjectCard = ({ id, data }: ProductCardProps) => {
           <ul className='flex flex-row gap-2'>
             {data.techStack.map((tech) => {
               return (
-                <li key={tech} className='text-sm'>
+                <li
+                  key={tech}
+                  className='text-sm border border-blue-200 p-2 rounded-md shadow-sm'
+                >
                   {tech}
                 </li>
               );
