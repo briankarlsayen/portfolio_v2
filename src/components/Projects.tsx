@@ -11,8 +11,10 @@ const Projects = () => {
           </h4>
           <h2 className='sub-heading font-bold hero-title'>Selected Works</h2>
         </div>
-        {projectsArr.map((project, id) => {
-          return <ParallaxProj key={id} id={id} data={project} />;
+        {projectsArr.map((project) => {
+          return (
+            <ParallaxProj key={project.id} id={project.id} data={project} />
+          );
         })}
       </div>
     </div>

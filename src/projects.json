@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "nooby",
     "description": "An eccomerce app that uses server rendering to load high definition images.",
     "techStack": [
@@ -10,9 +11,11 @@
     "website": "https://next-shop-livid.vercel.app",
     "image": "../images/nooby-app.jpg",
     "devImage": "../../public/images/nooby-app.jpg",
-    "bg": "white"
+    "bg": "white",
+    "story": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n Aenean a varius lectus.</p> Integer gravida dignissim interdum. Vivamus lacinia elit sapien, a rhoncus risus auctor eget. Nulla at blandit metus. Vivamus nec eleifend eros. Maecenas ut gravida nulla, eget dignissim urna. Phasellus tincidunt dui et nisl pulvinar, ac placerat tellus ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed malesuada lectus vitae odio commodo, venenatis laoreet lorem rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a varius lectus. Integer gravida dignissim interdum. Vivamus lacinia elit sapien, a rhoncus risus auctor eget. Nulla at blandit metus. Vivamus nec eleifend eros. Maecenas ut gravida nulla, eget dignissim urna. Phasellus tincidunt dui et nisl pulvinar, ac placerat tellus ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed malesuada lectus vitae odio commodo, venenatis laoreet lorem rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a varius lectus. Integer gravida dignissim interdum. Vivamus lacinia elit sapien, a rhoncus risus auctor eget. Nulla at blandit metus. Vivamus nec eleifend eros. Maecenas ut gravida nulla, eget dignissim urna. Phasellus tincidunt dui et nisl pulvinar, ac placerat tellus ultricies.\n Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed malesuada lectus vitae odio commodo, venenatis laoreet lorem rhoncus."
   },
   {
+    "id": 2,
     "name": "Chat App",
     "description": "A messaging website that prioritizes anonimity above all.",
     "techStack": [
@@ -28,6 +31,7 @@
     "bg": "#688FFF"
   },
   {
+    "id": 3,
     "name": "Pokedex",
     "description": "A pokemon information searching website.",
     "techStack": [
@@ -43,6 +47,7 @@
     "bg": "white"
   },
   {
+    "id": 4,
     "name": "Note App",
     "description": "A note taking app inspired by Notion. Has functionality of saving text and bookmarks, checking of finished task, and can freely drag notes to prefered position.",
     "techStack": [

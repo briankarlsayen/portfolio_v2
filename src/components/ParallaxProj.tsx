@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import GithubIcon from '../assets/icons/github.svg';
 import LinkIcon from '../assets/icons/link.svg';
 
@@ -58,7 +59,12 @@ const ProjectCard = ({ id, data }: ProductCardProps) => {
         <h4 className='uppercase text-sm text-violet-primary tracking-widest'>
           Featured
         </h4>
-        <h2 className='title pb-8'>{data.name}</h2>
+        <div className='flex gap-4 items-baseline'>
+          <h2 className='title pb-8'>{data.name}</h2>
+          <span className='text-sm hover:text-blue-400'>
+            <Link to={`/projects/${id}`}>READ MORE</Link>
+          </span>
+        </div>
         <p>{data.description}</p>
         <div className='mt-auto pt-6'>
           <ul className='flex flex-row gap-2'>
