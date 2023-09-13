@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 export const ProjectDetails = () => {
   let { id } = useParams();
   const project = projectsArr.find((item) => id === item.id.toString());
-  console.log('project', project);
+
   return (
     <div className='flex justify-center flex-col items-center'>
       <div className='max-w-4xl w-full border-2'>
@@ -27,8 +27,16 @@ export const ProjectDetails = () => {
           ))}
         </ul>
         {/* <pre>{project?.story}</pre> */}
-        <p className='whitespace-pre-line'>{project?.story}</p>
+        {/* <p className='whitespace-pre-line'>{project?.story}</p> */}
+        <div className='html-string'>
+          <HtmlRenderer htmlString={project?.story} />
+        </div>
       </div>
     </div>
   );
 };
+
+function HtmlRenderer({ htmlString }: any) {
+  // Use dangerouslySetInnerHTML to render HTML
+  return <div dangerouslySetInnerHTML={{ __html: htmlString }} />;
+}
