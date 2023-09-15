@@ -4,11 +4,13 @@ import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import { ProjectDetails } from './pages/ProjectDetails';
+import Dummy from './components/Dummy';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <Dummy />,
+    // element: <App />,
   },
   {
     path: '/projects/:id',
