@@ -9,8 +9,8 @@ import Dummy from './components/Dummy';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Dummy />,
-    // element: <App />,
+    // element: <Dummy />,
+    element: <App />,
   },
   {
     path: '/projects/:id',

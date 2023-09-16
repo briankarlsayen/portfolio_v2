@@ -61,9 +61,9 @@ const ProjectCard = ({ id, data }: ProductCardProps) => {
         </h4>
         <div className='flex gap-4 items-baseline'>
           <h2 className='title pb-8'>{data.name}</h2>
-          <span className='text-sm hover:text-blue-400'>
+          {/* <span className='text-sm hover:text-blue-400'>
             <Link to={`/projects/${id}`}>READ MORE</Link>
-          </span>
+          </span> */}
         </div>
         <p>{data.description}</p>
         <div className='mt-auto pt-6'>
